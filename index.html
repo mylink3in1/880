@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak WhatsApp & Telegram</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: rgb(184, 176, 176);
+
+      /* Wallpaper background */
+      background-image: url("walp.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    /* Tulisan bergerak atas */
+    .marquee {
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      box-sizing: border-box;
+      background: rgba(0,0,0,0.6);
+      padding: 10px 0;
+    }
+    .marquee span {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll 25s linear infinite;
+      font-size: 24px;
+      font-weight: bold;
+      color: yellow;
+    }
+    @keyframes scroll {
+      0%   { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* Judul kedap-kedip */
+    h1 {
+      margin: 20px 0;
+      font-size: 42px;
+      font-weight: bold;
+      color: rgb(242, 235, 235);
+      text-shadow: 0 0 6px black, 0 0 12px pink;
+      animation: blink 1s infinite;
+    }
+    @keyframes blink {
+      0%, 100% {
+        opacity: 1;
+        text-shadow: 
+          0 0 6px rgb(68, 59, 59),
+          0 0 15px pink,
+          0 0 25px hotpink;
+      }
+      50% {
+        opacity: 0.4;
+        text-shadow: 
+          0 0 3px black,
+          0 0 6px pink;
+      }
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+      gap: 30px;
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(142, 94, 94, 0.1);
+      padding: 15px;
+      border-radius: 15px;
+      text-decoration: none;
+      color: rgb(245, 245, 245);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .item img {
+      width: 100%;
+      max-width: 180px;
+      background: rgb(27, 2, 2);
+      border-radius: 15px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgb(249, 249, 249);
+    }
+
+    /* Tulisan bawah gambar naik turun */
+    .item p {
+      margin-top: 12px;
+      font-size: 22px;
+      font-weight: bold;
+      text-shadow: 0 0 4px rgb(237, 234, 234);
+      animation: updown 2s infinite ease-in-out;
+    }
+    @keyframes updown {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(246, 243, 243, 0.5);
+    }
+  </style>
+</head>
+<body>
+  <!-- Tulisan bergerak -->
+  <div class="marquee">
+    <span>📢 Selamat datang di halaman WhatsApp & Telegram 5g880! Klik logo di bawah untuk chat langsung & dapatkan welcome bonus 60% buat new member 🥰🥰</span>
+  </div>
+
+  <h1>🥰 veny & elisa 🥰</h1>
+  
+  <div class="container">
+    <!-- WhatsApp 1 -->
+    <a class="item" href="https://wa.me/+60178943150 " target="_blank">
+      <img src="5g880.jpg" alt="WhatsApp 5g880">
+      <p>WhatsApp 5g880</p>
+    </a>
+
+    <!-- WhatsApp 2 -->
+    <a class="item" href="https://wa.me/+60174037383 " target="_blank">
+      <img src="5g120.jpg" alt="WhatsApp 5g120">
+      <p>WhatsApp 5g120</p>
+    </a>
+
+    <!-- Telegram 1 -->
+    <a class="item" href="https://t.me/Veny5G880" target="_blank">
+      <img src="5g880.jpg" alt="Telegram 5g880">
+      <p>Telegram 5g880</p>
+    </a>
+
+    <!-- Telegram 2 -->
+    <a class="item" href="https://t.me/veny5g880group" target="_blank">
+      <img src="back.jpg" alt="Telegram payout">
+      <p>Channel Payout</p>
+    </a>
+  </div>
+</body>
+</html>
